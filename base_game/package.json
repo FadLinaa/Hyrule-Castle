@@ -1,0 +1,21 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "main": "function.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc baseGame.ts && node baseGame.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "dependencies": {
+    "ansi-colors": "^4.1.3",
+    "etna-eslint": "github:etna-alternance/ETNA-Linter",
+    "prompt-sync": "^4.2.0"
+  },
+  "description": ""
+}

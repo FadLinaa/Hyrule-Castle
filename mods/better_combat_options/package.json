@@ -1,0 +1,21 @@
+{
+  "name": "better_combat_options",
+  "version": "1.0.0",
+  "description": "",
+  "main": "class.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "dependencies": {
+    "ansi-color": "^0.2.1",
+    "ansi-colors": "^4.1.3",
+    "etna-eslint": "github:etna-alternance/ETNA-Linter",
+    "prompt-sync": "^4.2.0"
+  }
+}

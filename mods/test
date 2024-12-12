@@ -1,0 +1,57 @@
+const fs = require (`fs`)
+const DataClasse = fs.readFileSync('./class.json','utf8')
+const ClasseJson = JSON.parse(DataClasse)
+
+class Player {
+    name: string;
+    HP: number;
+    SRT: number;
+    max_hp:number;
+    def: number;
+    res: number; 
+
+    constructor(name: string, HP: number, SRT: number, max_hp:number, def :number , res :number) {
+      this.name = name;
+      this.HP = HP;
+      this.SRT = SRT;
+      this.max_hp= max_hp;
+      this.def = def;
+      this.res= res;
+
+    }
+}
+
+class classe {
+    name: string;
+    strengths: string[];
+    weaknesses: string[];
+    attack_type: string;
+    alignment : string;
+    rarity: number;
+
+    constructor(name: string, strengths: any, attack_type: string, alignment : string, rarity: number){
+    this.name = name;
+    this.strengths = strengths;
+    this.weaknesses= weaknesses;
+    this.attack_type= attack_type;
+    this.alignment = alignment;
+    this.rarity = rarity;
+
+}
+}
+let attack_type : string = "";
+
+class entiteFactory  {
+static createMonster(attack_type) {
+switch (attack_type) {
+    case "magical":
+        return new classe ();
+        break;
+    case 'def':
+        return new player ();
+    default:
+        console.log("No such day exists!");
+        break;
+}
+}
+}
